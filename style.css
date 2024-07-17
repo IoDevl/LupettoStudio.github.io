@@ -293,7 +293,29 @@ section h1 {
     background-color: #ff000030;
     border-radius: 5px;
 }
+#links #container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: calc(100% - 7rem - 40px);
+}
 
+#links #bio {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#links #bio p a {
+    padding: 2px;
+    background-color: #ff000030;
+    border-radius: 5px;
+}
 @media screen and (max-width: 1000px) {
     main h1 {
         font-size: 30px;
@@ -311,7 +333,16 @@ section h1 {
         width: 80%;
         gap: 30px;
     }
+    
+    #links h1 {
+        margin-bottom: 100px;
+    }
 
+    #links #bio {
+        width: 80%;
+        gap: 30px;
+    }
+    
     section {
         height: fit-content;
     }
